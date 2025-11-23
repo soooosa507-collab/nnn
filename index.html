@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>إعلان هام لطلاب كلية الأعمال</title>
+<meta name="description" content="محاضرة مجانية لطلاب كلية الأعمال – 9 أسرار للدخول إلى سوق العمل والحصول على وظيفة مناسبة. سجل الآن وابدأ رحلتك المهنية بثقة!">
+<meta name="keywords" content="كلية الأعمال, محاضرة, سوق العمل, توظيف, جامعة, طلاب, خريجين">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800&display=swap" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800&display=swap"></noscript>
+
+<style>
+:root {
+  --bg-page: #f3f5fa;
+  --bg-card: #ffffff;
+  --text-main: #111;
+  --text-soft: #555;
+  --anchor: #d4af37;
+  --shadow-gold: rgba(212,175,55,0.4);
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  font-family: 'Tajawal','Cairo','Arial',sans-serif;
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 15px;
+}
+
+main {
+  background: var(--bg-card);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  border-radius: 22px;
+  padding: 70px 35px 100px;
+  max-width: 780px;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 23px;
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text-main);
+  position: relative;
+  padding-bottom: 40px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--anchor), transparent);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--shadow-gold);
+  opacity: 0.9;
+  animation: gold-glow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes gold-glow {
+  from { opacity: 0.7; transform: translateX(-50%) scaleX(1); }
+  to   { opacity: 1; transform: translateX(-50%) scaleX(1.25); }
+}
+
+p {
+  font-size: 17px;
+  line-height: 2.6;
+  white-space: pre-line;
+  text-align: justify;
+  color: var(--text-soft);
+}
+
+p span.first-line { font-weight: 700; color: #222; }
+
+span.pause-visible {
+  display:inline-block;
+  color: var(--anchor);
+  font-weight:800;
+  letter-spacing:6px;
+  padding:0 6px;
+}
+span.emphasis { font-weight:700; color:#000; letter-spacing:3px; }
+span.hold { font-weight:700; color:#000; word-spacing:10px; letter-spacing:1px; }
+span.normal-line { display:inline-block; word-spacing:10px; font-weight:400; color:#000; }
+
+p.subtle {margin-top:20px; color:#666; line-height:2.5;}
+p.subtle strong { color:#000; font-weight:700; letter-spacing:2px; word-spacing:8px; }
+
+p.wish {
+  margin-top:25px;
+  line-height:2.6;
+  color:#444;
+  font-size:17px;
+  text-align:justify;
+}
+
+span.soft-stress { font-weight:700; color:#1a1a1a; letter-spacing:2.5px; opacity:0.95; }
+span.feel { color:#000; opacity:0.8; font-weight:700; }
+
+p.info {
+  margin-top:45px;
+  font-size:17px;
+  line-height:2.6;
+  color:#444;
+  text-align:justify;
+}
+
+p.info strong { font-weight:700; color:#000; }
+
+main::after {
+  content:"";
+  display:block;
+  position:absolute;
+  bottom:25px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:3px;
+  background:linear-gradient(to right,transparent,var(--anchor),transparent);
+  border-radius:2px;
+  box-shadow:0 0 6px var(--shadow-gold);
+}
+
+form {
+  margin-top: 45px;
+  text-align: center;
+}
+
+form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+label { display: none; }
+
+input[type="text"], input[type="email"] {
+  width: 75%;
+  max-width: 360px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: var(--anchor);
+  box-shadow: 0 0 5px var(--shadow-gold);
+}
+
+button {
+  background: var(--anchor);
+  color:#fff;
+  font-weight:700;
+  border:none;
+  padding:12px 25px;
+  border-radius:10px;
+  cursor:pointer;
+  margin-top:10px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background: #bfa231;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(212,175,55,0.35);
+}
+button:active {
+  background: #bfa231;
+  transform: scale(0.97);
+  box-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 180%;
+  height: 180%;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.5s ease-out;
+}
+
+button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#confirmation {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--anchor);
+  font-weight: 700;
+  font-size: 16.5px;
+  transition: opacity 0.6s ease;
+}
+
+footer {
+  text-align:center;
+  font-size:14px;
+  color:#777;
+  margin-top:50px;
+}
+
+@media (max-width:600px) {
+  main { padding:50px 22px 90px; }
+  h1 { font-size:20px; padding-bottom:34px; }
+  h1::after { width:90px; }
+  p, p.info, p.wish, p.subtle { font-size:16.5px; line-height:2.4; }
+  input[type="text"], input[type="email"], button { width: 90%; }
+  button { margin-top: 15px; }
+}
+
+/* ============================= */
+/* ✨ تنسيق النافذة المنبثقة ✨ */
+/* ============================= */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 15px;
+  max-width: 650px;
+  width: 90%;
+  padding: 50px 25px 25px 25px; /* 👈 زدت المسافة العلوية لتبتعد الكتابة عن علامة × */
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-close:hover { color: var(--anchor); }
+</style>
+</head>
+
+<body>
+<main role="main">
+  <h1>إعلان هام لطلاب كلية الأعمال<br>المستوى الأخير وقبل الأخير</h1>
+
+  <p>
+    <span class="first-line">إذا كنت طالب في كلية الأعمال المستوى السابع أو الثامن،</span> يعني قريب بتكون خريّج، فاسمح لي أقولها لك بكل صراحة ..&nbsp;&nbsp;&nbsp;أنــــت 
+    رجل .. &nbsp;&nbsp;&nbsp;بطل&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;كفو&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;مطنوخ&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;شجاع  ، وحش  &nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;شهم&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;أسطورة&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;رائع&nbsp;&nbsp;&nbsp;، ساحر  ،&nbsp;&nbsp;&nbsp;زعيم&nbsp;&nbsp;&nbsp;،&nbsp;&nbsp;&nbsp;مقاتل&nbsp;&nbsp;&nbsp;، مغوار ، فخم ، عظيم ، رهيب ، أخّاذ ، أنيق،&nbsp;&nbsp;&nbsp;ومقدام .. ونتمنى لك التوفيق بالجاي، وعلى قولتهم ..
+ راح الصعب وما بقى إلا السهل ..  وبإذن الله قريب تكون خرّيج بشكل رسمي.
+  </p>
+
+  <p class="subtle">
+    <strong>وبما إنك وصلت لهالمرحلة،</strong><br>
+    جمعنا لك معلومات <span class="emphasis">أســـتثنائية</span> تعتبر أسرار<br>
+     بتعينك <span class="emphasis">جـداً&nbsp;&nbsp;جـداً</span> على اللي جاي
+    <br><span class="hold">واللي هو</span><span class="pause-visible">···</span><br>
+    <span class="normal-line">دخولك لسوق العمل والحصول على وظيفة مناسبة.</span>
+  </p>
+
+  <p class="wish">
+    <strong><span class="soft-stress">وكم</span> تمنّيت</strong> أحد يعلّمني هذي المعلومات قبل أتخرج!!
+    لأن محد علّمني مثلاً، إن السيرة الذاتية تسويها قبل التخرج مو بعده!!
+    وإن المعدل مهم، لكن مو كثير مهم!!
+    ومحد علّمني إن اللغة الإنجليزية مهمة، لكن مو كثير مهمة!!
+    ومحد علّمني أشياء كثير، كانت بتختصر عليّ جهد ووقت كبير.
+  </p>
+
+  <p class="info">
+    <strong>هذي المعلومات اللي بشاركك</strong> أسرار يعرفها بعض النخبة.
+    إذا كان معدلك عالي راح تزيدك قوّة على قوّة.
+    وإذا معدلك منخفض راح تجبر نقصك وتزيدك قوّة.!
+
+    <strong>هذي المعلومات راح تاخذ بيدك</strong> وتمدّك بمفاتيح وأسرار تفتح لك الطريق..
+    <strong>بدايةً •</strong> من كتابة سيرتك الذاتية، <strong>مروراً •</strong> ببحثك عن الوظيفة وتجاوز المقابلات الوظيفية، سواءً حكومية أو عسكرية 
+     أو قطاع خاص، <strong>ووصولاً •</strong> إلى إن الفرص هي اللي تجيك وتطرق بابك!
+
+    <strong>كل هذي المعلومات</strong> سهلنا الوصول لها في محاضرة مجانية بعنوان:
+    <strong>9 أسرار للدخول لسوق العمل والحصول على وظيفة مناسبة.</strong>
+
+    <strong>فإذا تحب تكون حاضر وموجود</strong> .. سجل اسمك وإيميلك تحت، وراح يوصلك الموعد والتاريخ على إيميلك..
+
+    <strong>ونوعدك</strong>، راح تكون من أهم المحاضرات اللي تدخلها بحياتك✨
+    <span class="feel">*</span> المقاعد محدودة
+  </p>
+
+  <form aria-label="نموذج تسجيل حضور المحاضرة">
+    <h2>📋 تحب تحضر ؟!</h2>
+    <button type="button" id="openModal" aria-label="تسجيل حضورك في المحاضرة">سجّل من هنا</button>
+  </form>
+
+  <footer role="contentinfo">© 2025 كلية الأعمال - جميع الحقوق محفوظة</footer>
+</main>
+
+<!-- 🌟 النافذة المنبثقة -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal" aria-label="إغلاق النافذة"></button>
+    <h2>📋 اكتب اسمك وإيميلك تحت</h2>
+
+    <!-- ✅ الحاوية الأساسية -->
+    <div id="ninjaContainer">
+      <!-- شاشة تحميل -->
+      <div id="ninjaLoader" class="loader">⏳ جاري تحميل النموذج...</div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ✅ الخلفية العاتمة */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ✅ محتوى المودال */
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 650px;
+  width: 90%;
+  padding: 50px 25px 25px 25px;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* ✅ زر إغلاق أنيق وناعم */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background-color: #888;
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+.modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background-color: #000;
+}
+
+/* ✅ شاشة التحميل */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  color: #666;
+  font-weight: 600;
+  animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+  to {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 45px 15px 20px 15px;
+  }
+}
+</style>
+
+<script>
+/* ✅ إعداد المتغيرات */
+const modal = document.getElementById('modal');
+const openModal = document.getElementById('openModal');
+const closeModal = document.getElementById('closeModal');
+const container = document.getElementById('ninjaContainer');
+const loader = document.getElementById('ninjaLoader');
+
+/* ✅ تحميل مسبق للنموذج الجديد (10090) */
+const preloadIframe = document.createElement('iframe');
+preloadIframe.src = "https://my.webinarninja.com/embedding-form/10090";
+preloadIframe.style =
+  "min-width:320px;width:100%;height:420px;border:0;overflow:hidden;display:none;";
+preloadIframe.className = "webinarninja-embedding-registration-form-10090";
+preloadIframe.loading = "lazy";
+preloadIframe.allowTransparency = true;
+preloadIframe.title = "Webinar Registration Form";
+
+/* ✅ تحديث ارتفاع iframe بطريقة ديناميكية */
+function updateIframe(e) {
+  switch (e.type) {
+    case "resizeIframe":
+      this.style.height = e.height + "px";
+      break;
+    case "iframeDownloadFailed":
+      this.hidden = true;
+      break;
+    default:
+      return;
+  }
+}
+window.addEventListener("message", function (e) {
+  var a = document.querySelectorAll(e.data.id);
+  [].forEach.call(a, function (el) {
+    updateIframe.call(el, e.data);
+  });
+});
+
+/* ✅ تحميل النموذج فعليًا بعد دخول الصفحة */
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.appendChild(preloadIframe);
+});
+
+/* ✅ عند الضغط على الزر */
+openModal.addEventListener("click", () => {
+  loader.style.display = "flex";
+  modal.style.display = "flex";
+
+  // نسخ النموذج بعد تحميله
+  if (preloadIframe.contentWindow || preloadIframe.readyState === 4) {
+    setTimeout(() => {
+      container.innerHTML = "";
+      const readyIframe = preloadIframe.cloneNode(true);
+      readyIframe.style.display = "block";
+      container.appendChild(readyIframe);
+    }, 300);
+  } else {
+    setTimeout(() => {
+      container.innerHTML = "";
+      const iframe = document.createElement("iframe");
+      iframe.src = preloadIframe.src;
+      iframe.style =
+        "min-width:320px;width:100%;height:420px;border:0;overflow:hidden;";
+      iframe.className = preloadIframe.className;
+      iframe.loading = "lazy";
+      iframe.allowTransparency = true;
+      iframe.title = preloadIframe.title;
+      container.appendChild(iframe);
+    }, 1000);
+  }
+
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1200);
+});
+
+/* ✅ إغلاق النافذة */
+closeModal.addEventListener("click", () => (modal.style.display = "none"));
+window.addEventListener("click", (e) => {
+  if (e.target === modal) modal.style.display = "none";
+});
+</script>
